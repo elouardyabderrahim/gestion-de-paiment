@@ -11,13 +11,15 @@ public class EmployeComission  extends Employee{
 		this.commission_Vendeur=commission_Vendeur;
 	}
 	
-
+	public double calculerSalaire() {
+		return super.getSalaire()+(quantite_Vendeur*commission_Vendeur);
+	}
 
 
 	@Override
 	public String toString() {
 		return "L'Employes Commission:"+"\n\t First Name :" + getFirstname() + "\n\t Last Name:" + getLastname() +
-				"\n\t Datebirth:" + strDate+ "\n\t Salaire:" + getSalaire()+(quantite_Vendeur*commission_Vendeur)+ "";
+				"\n\t Datebirth:" + strDate+ "\n\t Salaire:" + calculerSalaire()+ "";
 
 	}
 	

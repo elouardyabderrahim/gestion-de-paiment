@@ -69,6 +69,15 @@ public class Employee {
 		
 	}
 
+	public Employee(String firstname, String lastname ,String strDate) {
+		super();
+		this.Firstname = firstname;
+		this.Lastname = lastname;
+	
+		this.strDate = strDate;
+		
+	}
+
 	public String getFirstname() {
 		return Firstname;
 	}
@@ -102,7 +111,6 @@ public class Employee {
 	}
 	
 	
-
 
 
 	@Override
